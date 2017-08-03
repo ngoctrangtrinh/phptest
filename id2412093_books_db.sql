@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 03, 2017 at 08:51 AM
+-- Generation Time: Aug 03, 2017 at 11:40 AM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.0.8
 
@@ -38,9 +38,9 @@ CREATE TABLE `book` (
 --
 
 INSERT INTO `book` (`id`, `name`, `publisher`, `page`) VALUES
-(3, 'book3333', 'trang', 1065555),
-(4, 'frg', 'rtret', 10),
-(5, 'eee', 'eeeeee', 1233434);
+(7, 'book', 'trang', 5),
+(10, 'book3', 'trangtrinh', 44),
+(9, 'book2', 'trangtrinh', 444);
 
 -- --------------------------------------------------------
 
@@ -59,11 +59,8 @@ CREATE TABLE `impression` (
 --
 
 INSERT INTO `impression` (`id`, `name`, `book_id`) VALUES
-(2, 'This is comment1', 3),
-(3, 'This is comment1', 3),
-(4, 'This is comment1', 3),
-(5, 'This is comment1', 3),
-(6, 'this is comment', 5);
+(9, 'this is good', 7),
+(10, 'so good', 7);
 
 --
 -- Indexes for dumped tables
@@ -89,12 +86,12 @@ ALTER TABLE `impression`
 -- AUTO_INCREMENT for table `book`
 --
 ALTER TABLE `book`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `impression`
 --
 ALTER TABLE `impression`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
